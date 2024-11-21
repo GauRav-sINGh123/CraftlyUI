@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image'
+import Link from 'next/link'
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 
@@ -29,23 +30,23 @@ export function Hero() {
               beautiful illustrations. Transform your ideas into reality.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <motion.a
-                href="#features"
+              <Link href={"/signup"}>
+              <motion.p
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2 shadow-lg"
               >
                 Get Started
                 <ArrowRight className="w-4 h-4" />
-              </motion.a>
-              <motion.a
-                href="#contact"
+              </motion.p>
+              </Link>
+              <motion.p
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-3 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors"
               >
                 Contact Us
-              </motion.a>
+              </motion.p>
             </div>
           </motion.div>
           <motion.div

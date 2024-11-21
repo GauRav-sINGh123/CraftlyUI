@@ -13,7 +13,7 @@ export function Navigation() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="text-xl font-bold">
-              ModernWeb
+             CraftlyUi
             </Link>
           </div>
 
@@ -27,6 +27,12 @@ export function Navigation() {
                 {item}
               </Link>
             ))}
+            <Link
+              href="/login"
+              className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors"
+            >
+              Login
+            </Link>
           </div>
 
           <div className="md:hidden flex items-center">
@@ -52,6 +58,13 @@ export function Navigation() {
                   {item}
                 </Link>
               ))}
+              <Link
+                href="/login"
+                className="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md"
+                onClick={() => setIsOpen(false)}
+              >
+                Login
+              </Link>
             </div>
           </div>
         )}

@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export function Contact() {
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-32 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <motion.div
@@ -20,13 +20,13 @@ export function Contact() {
               Have a project in mind? We'd love to hear about it. Send us a message
               and we'll get back to you as soon as possible.
             </p>
-            <div className="relative h-[350px]">
+            <div className=" h-[350px]">
             <Image
-              src={"/Customer.png"}
+              src={"/Hero.png"}
               alt={"Team Work Illustration"}
               width={500}
               height={500}
-              className=" "
+               
             />
             </div>
           </motion.div>
@@ -36,7 +36,7 @@ export function Contact() {
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <form className="space-y-6">
+            <form className="space-y-6 mt-14">
               <div>
                 <label
                   htmlFor="name"
@@ -47,7 +47,7 @@ export function Contact() {
                 <input
                   type="text"
                   id="name"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  className="mt-1 block w-full p-2 rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                   required
                 />
               </div>
@@ -61,7 +61,7 @@ export function Contact() {
                 <input
                   type="email"
                   id="email"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  className="mt-1 block w-full p-2 rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                   required
                 />
               </div>
@@ -75,7 +75,7 @@ export function Contact() {
                 <textarea
                   id="message"
                   rows={4}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  className="mt-1 block w-full p-2 rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                   required
                 ></textarea>
               </div>
