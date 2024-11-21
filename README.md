@@ -4,15 +4,6 @@ Craftly is a modern UI website built with Next.js, TypeScript, Tailwind CSS, Sha
 
 ![Craftly Screenshot](./public//Craftly.jpg)
 
-## Table of Contents
-
-- [Technologies](#technologies)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Technologies
 
 Craftly is built using the following technologies:
